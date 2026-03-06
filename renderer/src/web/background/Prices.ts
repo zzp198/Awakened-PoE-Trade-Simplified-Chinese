@@ -59,7 +59,7 @@ export const usePoeninja = createGlobalState(() => {
       let divine
 
       if (league.realm === 'pc-ggg') {
-        const response = await Host.proxy(`poe.ninja/api/data/DenseOverviews?league=${league.id}&language=en`, {
+        const response = await Host.proxy(`https://poe.ninja/poe1/api/economy/current/dense/overviews?league=${league.id}`, {
           signal: downloadController.signal
         })
         const jsonBlob = await response.text()

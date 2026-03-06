@@ -9,6 +9,7 @@ on:
     paths-ignore:
       - 'docs/**'
       - README.md
+  workflow_dispatch:
 
 jobs:
   renderer:
